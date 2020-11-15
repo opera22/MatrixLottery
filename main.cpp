@@ -41,10 +41,12 @@ int main() {
 
     //how far the @ cursor will travel, between 80 to 200 squares
     int launchDistance = rand() % 200 + 80;
-    //modulo operation to get a 0-99 index from the launchDistance
-    int finalIndex = launchDistance % 100;
     //here is a line of code to help debugging (it guarantees a win)
     //int launchDistance = x2;
+    
+    //modulo operation to get a 0-99 index from the launchDistance
+    int finalIndex = launchDistance % 100;
+
     bool continueLoop = true;
     int distanceRemaining = launchDistance;
     
@@ -80,7 +82,7 @@ int main() {
         cout << "Congratulations! You won (nothing)!" << endl;
     } else {
 
-        cout << "Sorry, you did not win."
+        cout << "Sorry, you did not win.";
     }
 
     return 0;
